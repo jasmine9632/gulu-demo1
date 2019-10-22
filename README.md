@@ -133,3 +133,20 @@ npm i -g git-open
 git open
 
 
+
+
+单元测试
+
+nmp i -D chai
+
+git add .
+ 
+git commit -m "安装chai"
+
+git pull
+
+git push
+
+
+
+
