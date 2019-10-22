@@ -1,29 +1,36 @@
 {
-  "name": "gulu",
-  "version": "0.0.1",
-  "description": "这是一个Vue UI组件库",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jasmine9632/gulu-demo1.git"
-  },
-  "keywords": [
-    "Vue",
-    "UI"
-  ],
-  "author": "Jasmine",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jasmine9632/gulu-demo1/issues"
-  },
-  "homepage": "https://github.com/jasmine9632/gulu-demo1#readme",
-  "dependencies": {
-    "vue": "^2.6.10"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "name": "gulu",
+    "version": "0.0.1",
+    "description": "这是一个Vue UI组件库",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jasmine9632/gulu-demo1.git"
+    },
+    "keywords": [
+        "Vue",
+        "UI"
+    ],
+    "author": "Jasmine",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jasmine9632/gulu-demo1/issues"
+    },
+    "homepage": "https://github.com/jasmine9632/gulu-demo1#readme",
+    "dependencies": {
+        "vue": "^2.6.10",
+        "vue-hot-reload-api": "^2.3.4"
+    },
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.0.0",
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.23.0",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
+    }
 }
