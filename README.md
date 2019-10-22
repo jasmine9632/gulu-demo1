@@ -101,7 +101,7 @@ git push
  
  rm -rf .cache
  
- npx parcel
+ npx parcel index.html
  
  打包之前
  
