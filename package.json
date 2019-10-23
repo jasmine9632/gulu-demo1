@@ -8,6 +8,7 @@
         "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
     },
     "repository": {
+        "start": "parcel index.html --no-cache",
         "type": "git",
         "url": "git+https://github.com/jasmine9632/gulu-demo1.git"
     },
