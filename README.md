@@ -5,6 +5,28 @@
 ## by Jasmine
 
 
+```
+//新建本地分支
+git branch button-input
+touch src/row.vue
+touch src/col.vue
+git status -sb
+git add .
+git commit -m "add row and col"
+git pull
+git push
+//本地分支推送到远程分支
+git push origin button-input:button-input
+
+
+git checkout button-input
+//Switched to branch 'button-input'
+
+git checkout master
+//Switched to branch 'master'
+```
+
+
 ## 介绍
 
 这是我在学习 Vue 过程中做的一个 UI 框架，希望对你有用。
