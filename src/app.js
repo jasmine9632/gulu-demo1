@@ -19,10 +19,10 @@ Vue.component('g-input', Input)
 Vue.component('g-row', Row)
 Vue.component('g-col', Col)
 Vue.component('g-layout', Layout)
-Vue.component('g-header', header)
-Vue.component('g-sider', sider)
-Vue.component('g-footer', footer)
-Vue.component('g-content', content)
+Vue.component('g-header', Header)
+Vue.component('g-sider', Sider)
+Vue.component('g-footer', Footer)
+Vue.component('g-content', Content)
 
 
 new Vue({
