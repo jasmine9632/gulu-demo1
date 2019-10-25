@@ -1,9 +1,8 @@
 <template>
-  <div class="col" :class=" colClass " :style="colStyle">
+  <div class="col" :class="colClass" :style="colStyle">
     <slot></slot>
   </div>
 </template>
-
 <script>
 let validator = (value) => {
   let keys = Object.keys(value)
@@ -12,10 +11,9 @@ let validator = (value) => {
     if (!['span', 'offset'].includes(key)) {
       valid = false
     }
-  });
+  })
   return valid
 }
-
 export default {
   name: 'GuluCol',
   props: {
@@ -25,22 +23,14 @@ export default {
     offset: {
       type: [Number, String]
     },
-    ipad: {
-      type: Object, validator
-    },
-    narrowPc: {
-      type: Object, validator
-    },
-    pc: {
-      type: Object, validator
-    },
-    widePc: {
-      type: Object, validator
-    }
+    ipad: { type: Object, validator, },
+    narrowPc: { type: Object, validator, },
+    pc: { type: Object, validator, },
+    widePc: { type: Object, validator, }
   },
   data () {
     return {
-      gutter: 0
+      gutter: 0,
     }
   },
   methods: {
@@ -61,7 +51,7 @@ export default {
         ...createClasses(ipad, 'ipad-'),
         ...createClasses(narrowPc, 'narrow-pc-'),
         ...createClasses(pc, 'pc-'),
-        ...createClasses(widePc, 'wide-pc'),
+        ...createClasses(widePc, 'wide-pc-'),
       ]
     },
     colStyle () {
@@ -73,7 +63,6 @@ export default {
   }
 }
 </script>
-
 <style scoped lang="scss">
 .col {
   $class-prefix: col-;
@@ -102,8 +91,8 @@ export default {
       }
     }
   }
-
   @media (min-width: 769px) {
+    // 770
     $class-prefix: col-narrow-pc-;
     @for $n from 1 through 24 {
       &.#{$class-prefix}#{$n} {

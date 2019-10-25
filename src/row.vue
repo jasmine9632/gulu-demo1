@@ -13,17 +13,14 @@ export default {
     align: {
       type: String,
       validator (value) {
-        return ['left', 'right', 'center'].includes(value)
+        return ['left', 'right', 'center'].indexOf(value) >= 0
       }
     }
   },
   computed: {
     rowStyle () {
       let { gutter } = this
-      return {
-        marginLeft: -gutter / 2 + 'px',
-        marginRight: -gutter / 2 + 'px',
-      }
+      return { marginLeft: -gutter / 2 + 'px', marginRight: -gutter / 2 + 'px' }
     },
     rowClass () {
       let { align } = this
@@ -37,7 +34,6 @@ export default {
   }
 }
 </script>
-
 <style scoped lang="scss">
 .row {
   display: flex;
@@ -45,10 +41,10 @@ export default {
   &.align-left {
     justify-content: flex-start;
   }
-  .align-right {
+  &.align-right {
     justify-content: flex-end;
   }
-  .align-center {
+  &.align-center {
     justify-content: center;
   }
 }
